@@ -16,7 +16,7 @@ export async function PATCH(req: Request, { params }: { params: { id: string } }
     return NextResponse.json({ success: true, data }, { status: 200 });
 }
 
-// DELETE: Remove a customer
+// DELETE: Remove a customer with this
 export async function DELETE(req: Request, { params }: { params: { id: string } }) {
     const customerId = params.id;
 
